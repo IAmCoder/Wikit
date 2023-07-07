@@ -9,6 +9,7 @@ App for WikiTribune Social 2.0, a community-led and community-moderated platform
 ## Debug
 
 `yarn install`
+
 `npx expo start`
 
 `eas build --profile development --platform android`
@@ -25,11 +26,15 @@ App for WikiTribune Social 2.0, a community-led and community-moderated platform
 ## Local build
 
 `sudo ./sdkmanager --install "cmake;3.22.1"`
+
 `export ANDROID_HOME="/usr/lib/android-sdk"`
+
 `eas build --platform android --local`
+
 `eas build --profile development --platform android --local`
 
 ## Prod Build
 
 `eas build -p android`
+
 `eas build --profile production --platform android`
