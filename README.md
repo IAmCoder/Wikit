@@ -15,10 +15,12 @@ App for WikiTribune Social 2.0, a community-led and community-moderated platform
 
 ## Screenshots
 
-<img alt="Login Screen" height="400" src="./screenshots/login.jpg" />
-<img alt="Login Screen" height="400" src="./screenshots/technology.jpg" />
-<img alt="Login Screen" height="400" src="./screenshots/profile.jpg" />
-<img alt="Login Screen" height="400" src="./screenshots/settings.jpg" />
+<p align="center">
+    <img alt="Login Screen" height="400" src="./screenshots/login.jpg" />
+    <img alt="Login Screen" height="400" src="./screenshots/technology.jpg" />
+    <img alt="Login Screen" height="400" src="./screenshots/profile.jpg" />
+    <img alt="Login Screen" height="400" src="./screenshots/settings.jpg" />
+</p>
 
 ## Local build
 
