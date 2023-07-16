@@ -44,10 +44,9 @@ const App = () => {
     return true
   }
 
-  const handleScroll = (event) => {
-    console.log(Number(event.nativeEvent.contentOffset.y))
+  const handleScroll = (event: any) => {
     const yOffset = Number(event.nativeEvent.contentOffset.y)
-    if (yOffset < 0.1) {
+    if (yOffset < 10) {
       setRefresh(true)
     } else {
       setRefresh(false)

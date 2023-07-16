@@ -3,7 +3,7 @@
     "owner": "lucidcode",
     "name": "Wikit",
     "slug": "wikit",
-    "version": "0.9.8.0",
+    "version": "0.9.8.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -27,7 +27,7 @@
     },
     "android": {
       "package": "com.lucidcode.wikit",
-      "versionCode": 908,
+      "versionCode": 981,
       "permissions": [
         "AD_ID"
       ],
