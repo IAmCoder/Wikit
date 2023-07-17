@@ -75,7 +75,7 @@ const App = () => {
             cacheEnabled={true}
             style={styles.container}
             allowsBackForwardNavigationGestures={true}
-            source={{ uri: 'https://wts2.wt.social' }}
+            source={{ uri: 'https://www.trustcafe.io' }}
             ref={webViewRef}
             onScroll={handleScroll}
           />
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   ScrollStyle: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     position: 'relative',
   },
 })
