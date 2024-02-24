@@ -23,7 +23,7 @@ const App = () => {
   const colorScheme = useColorScheme()
 
   const webViewRef = useRef()
-  const [refresh, setRefresh] = useState(false)
+  const [refresh, setRefresh] = useState(true)
 
   const handleBackButtonPress = () => {
     try {
@@ -72,6 +72,12 @@ const App = () => {
           }
         >
           <WebView
+            startInLoadingState={true}
+            renderLoading={() => <View
+              style={{
+                  backgroundColor: colorScheme == 'light' ? 'white' : 'black',
+              }}
+              />}
             cacheEnabled={true}
             style={styles.container}
             allowsBackForwardNavigationGestures={true}
@@ -90,6 +96,7 @@ export default gestureHandlerRootHOC(App)
 const styles = StyleSheet.create({
   container: {
     position: 'relative',
+    backgroundColor: 'black',
   },
   ScrollStyle: {
     backgroundColor: 'black',
