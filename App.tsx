@@ -25,8 +25,6 @@ const App = () => {
   AppRegistry.registerComponent('Wikit', () => App)
   const colorScheme = useColorScheme()
 
-  //https://www.trustcafe.io/en/welcome
-
   const webViewRef = useRef()
   const [refresh, setRefresh] = useState(true)
   const [navUri, setNavUri] = React.useState('https://www.trustcafe.io')
@@ -62,7 +60,7 @@ const App = () => {
   useEffect(() => {
     BackHandler.addEventListener('hardwareBackPress', handleBackButtonPress)
     return () => {
-      BackHandler.exitApp() //.removeEventListener('hardwareBackPress', handleBackButtonPress)
+      BackHandler.exitApp()
     }
   }, [])
 
@@ -80,14 +78,19 @@ const App = () => {
   }
 
   const myRule = () => {
-    var support = `document.querySelector(\"[aria-label='Support Trust Café']\").style = 'display: none;'`;
+    var support = `document.querySelector(\"[aria-label='Support Trust Café']\").style = 'display: none;';`;
+    var android = "";
     if (Platform.OS === 'android') {
       support = "";
+      android = "clearTimeout(window.apple);";
     }
     return support + `
     var logos = document.querySelectorAll(\"[alt='Trust Cafe Logo']\");
     logos.forEach(p => {if (p.src.indexOf('white') > 0) {p.src = 'https://lucid-code.com/Images/wikit-white.png';} else {p.src = 'https://lucid-code.com/Images/wikit-dark.png';}});
     clearTimeout(window.id);
+    `
+    + android +
+    `
     true;
     `
   }
@@ -98,9 +101,13 @@ const App = () => {
     }
     return `
     window.id = setInterval(() => {
-    var logos = document.querySelectorAll(\"[alt='Trust Cafe Logo']\");
-    logos.forEach(p => {if (p.src.indexOf('white') > 0) {p.src = 'https://lucid-code.com/Images/wikit-white.png';} else {p.src = 'https://lucid-code.com/Images/wikit-dark.png';}});
+      var logos = document.querySelectorAll(\"[alt='Trust Cafe Logo']\");
+      logos.forEach(p => {if (p.src.indexOf('white') > 0) {p.src = 'https://lucid-code.com/Images/wikit-white.png';} else {p.src = 'https://lucid-code.com/Images/wikit-dark.png';}});
     }, 16);
+    
+    window.apple = setInterval(() => {
+      document.querySelector(\"[aria-label='Support Trust Café']\").style = 'display: none;';
+    }, 1024);
     true;
     `
   }

@@ -37,4 +37,8 @@ App for WikiTribune Social 2.0, a community-led and community-moderated platform
 
 `eas build -p android`
 
+`eas build -p ios`
+
+`eas submit --platform ios`
+
 `eas build --profile production --platform android`
