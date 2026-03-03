@@ -3,7 +3,7 @@
     "owner": "lucidcode",
     "name": "Wikit",
     "slug": "wikit",
-    "version": "0.9.9.4",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -11,7 +11,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#000"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -21,13 +21,15 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "20",
-      "infoPlist": {},
+      "buildNumber": "100",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
       "bundleIdentifier": "com.lucidcode.wikit"
     },
     "android": {
       "package": "com.lucidcode.wikit",
-      "versionCode": 994,
+      "versionCode": 999,
       "permissions": [
         "AD_ID",
         "RECEIVE_BOOT_COMPLETED",
