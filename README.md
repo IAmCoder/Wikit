@@ -4,9 +4,9 @@ App for WikiTribune Social 2.0, a community-led and community-moderated platform
 
 ## Download
 
-[<img alt="Get it on Google Play" width="281" height="84" src="./assets/google-play.png" />](https://play.google.com/store/apps/details?id=com.lucidcode.wikit)
+[<img alt="Get it on Google Play" width="141" height="42" src="./assets/google-play.png" />](https://play.google.com/store/apps/details?id=com.lucidcode.wikit)
 
-[<img alt="Get it on Google Play" width="283" height="84" src="./assets/app-store.png" />](https://apps.apple.com/us/app/wikit-social/id6758104901)
+[<img alt="Get it on Google Play" width="141" height="42" src="./assets/app-store.png" />](https://apps.apple.com/us/app/wikit-social/id6758104901)
 
 ## Debug
 
